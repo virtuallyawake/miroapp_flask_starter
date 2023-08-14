@@ -3,14 +3,14 @@ This starter app contains a flask web server that serves a simple Miro app. Once
 
 ### Installation
 
-- Create a virtual environment in your project directory. This will create a .env directory:
+Create a virtual environment in your project directory. This will create a .env directory:
 
 ```
 cd miroapp_flask_starter
 python3 -m venv .venv
 ```
 
-- Activate your virtual environment:
+Activate your virtual environment:
 
 ```
 source .venv/bin/activate
@@ -24,7 +24,7 @@ After activating the virtual environment, your prompt will have a prefix (.env),
 
 If you are not familiar with python virtual environments, read more here: https://www.dataquest.io/blog/a-complete-guide-to-python-virtual-environments/
 
-- Install all the required packages in the virtual environment
+Install all the required packages in the virtual environment
 
 ```
 pip install -r requirements.txt
