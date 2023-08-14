@@ -10,5 +10,6 @@ def hello():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    print('Submit received')
+    print('Form received')
+    print(request.form)
     return app.send_static_file('acknowledgement.html')

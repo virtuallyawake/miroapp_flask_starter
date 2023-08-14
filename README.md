@@ -6,20 +6,20 @@ This starter app contains a flask web server that serves a simple Miro app. Once
 - Create a virtual environment in your project directory. This will create a .env directory:
 
 ```
-cd myproject
+cd miroapp_flask_starter
 python3 -m venv .venv
 ```
 
 - Activate your virtual environment:
 
 ```
-source .env/bin/activate
+source .venv/bin/activate
 ```
 
 After activating the virtual environment, your prompt will have a prefix (.env), like this:
 
 ```
-(.venv) daniela@laptop:~/myproject$ 
+(.venv) daniela@MacBook-Pro miroapp_flask_starter %
 ```
 
 If you are not familiar with python virtual environments, read more here: https://www.dataquest.io/blog/a-complete-guide-to-python-virtual-environments/
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ### Run the flask web server locally
 
 ```
-flask --app flask_app run
+export FLASK_APP=flask_app.py && export FLASK_ENV=development && flask run
 ```
 
 It will print in which port the server is running. Usually it is http://127.0.0.1:5000. If so, you can check that it is serving the static pages by going to http://127.0.0.1:5000/static/app.html
@@ -41,7 +41,7 @@ You should see a form with a text box and a button. If you press the button, the
 
 ### Deploying to production
 
-To use a flask in production, please refer to https://flask.palletsprojects.com/en/2.3.x/deploying/
+To use flask in production, please refer to https://flask.palletsprojects.com/en/2.3.x/deploying/
 
 ### Miro app
 
