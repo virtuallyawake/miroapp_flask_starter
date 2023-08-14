@@ -46,4 +46,7 @@ To use flask in production, please refer to https://flask.palletsprojects.com/en
 ### Miro app
 
 This project includes a simple Miro app. If you got the flask web server running, the entry point of your Miro app is the index.html file found at http://127.0.0.1:5000/static/index.html
-When configuring your Miro app in your App Settings page in miro.com, paste the url that points to the index.html file in the input box for App URL. 
+
+Now that the code for your Miro app is hosted locally, you can proceed to create and configure your Miro app in miro.com. Follow the instructions here: https://developers.miro.com/docs/manually-create-an-app
+
+Please note that Step 2 of the instructions show how to configure an app by editing the manifest. You can also configure your app through the UI. In that case, you only need to paste the url that points to the index.html file in the input box for App URL, check `boards:read` and `boards:write` as the scopes and press the "Install app and get OAuth token" button.
